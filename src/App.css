@@ -1,38 +1,101 @@
-.App {
+*{
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Star Rating style */
+.on{
+  background-color: yellow;
+}
+off{
+  background-color: darkgrey;
+}
+#btn{
+  border: none;
+  border-radius: 60%;
+  color: red;
+  font-size: 15px;
+  margin: 2px;
+  font-weight:bold;
+}
+
+.starValue{
+  font-size: 13px;
+  font-weight: bold;
+  margin: 4px 0px 0px 4px;
+}
+
+/* Cart Button style */
+.cartBtn{
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  padding: 2px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+}
+.twoButton{
+  display: flex;
+  justify-content: space-evenly;
+}
+.addcart{
+background-color: #f77f00;
+}
+.removecart{
+  background-color: #fcbf49;
+}
+/* outer */
+#outer{
+  padding: 1px;
+  margin-left: 8px;
+  margin-top: 15px;
+  width: 300px;
+  /* height: 320px; */
+  max-height: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 3px solid rgb(110, 105, 105);
+}
+#outer1{
+  width: 100%;
+  height: 210px;
+  background-color: gray;
+  position: relative;
+  bottom: 19px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#inner{
+  width:100%;height: 110px;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* MenuBar */
+.MenuBar{
+  background-color: #FCBF49;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 40px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.logo{
+  margin-left: 25px;
+  font-size: 18px;
+  font-weight: bold;
 }
+.cart{
+  margin-right: 25px;
+  font-size: 16px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.carticon {
+  height: 20px; width: 25px;
+  background-color: red;
+  border-radius: 50%;padding: 2px;
+  
 }

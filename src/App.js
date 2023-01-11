@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import StarRating from './starRating';
+import Btntask from './Button';
+import Menubar from './menubar';
 
 function App() {
+  const nos=[1,2,3,4,5,6,7,8];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div>
+      <Menubar/>
     </div>
-  );
+    <div className="App">
+     {nos.map((elem,index)=>(<Cart/>))}
+    </div>
+    </>
+  )
 }
+
+function Cart(){
+return(
+  <div id='outer'>
+    <div id='outer1'>
+  <h3>Image</h3>
+  </div>
+  <div id='inner'> 
+  <Btntask/>
+  <StarRating/>
+  </div>
+ 
+  </div>
+);
+
+}
+
+
 
 export default App;
